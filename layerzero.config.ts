@@ -70,6 +70,14 @@ const config: OAppOmniGraphHardhat = {
                         ]
                     }
                 },
+                enforcedOptions: [
+                    {
+                        msgType: 1,
+                        optionType: ExecutorOptionType.LZ_RECEIVE,
+                        gas: 60000,
+                        value: 0
+                    }
+                ]
             }
         },
         {
@@ -105,7 +113,15 @@ const config: OAppOmniGraphHardhat = {
                         ],
                         optionalDVNs: [],
                     }
-                }
+                },
+                enforcedOptions: [
+                    {
+                        msgType: 1,
+                        optionType: ExecutorOptionType.LZ_RECEIVE,
+                        gas: 60000,
+                        value: 0
+                    }
+                ]
             }
         },
         {
@@ -142,7 +158,14 @@ const config: OAppOmniGraphHardhat = {
                         ]
                     }
                 },
-
+                enforcedOptions: [
+                    {
+                        msgType: 1,
+                        optionType: ExecutorOptionType.LZ_RECEIVE,
+                        gas: 60000,
+                        value: 0
+                    }
+                ]
             },
         },
         {
@@ -177,7 +200,15 @@ const config: OAppOmniGraphHardhat = {
                             "0xb19a9370d404308040a9760678c8ca28affbbb76", // nethermind dvn on mantle
                         ]
                     }
-                }
+                },
+                enforcedOptions: [
+                    {
+                        msgType: 1,
+                        optionType: ExecutorOptionType.LZ_RECEIVE,
+                        gas: 60000,
+                        value: 0
+                    }
+                ]
             }
         },
         {
@@ -213,7 +244,15 @@ const config: OAppOmniGraphHardhat = {
                         ],
                         optionalDVNs: [],
                     }
-                }
+                },
+                enforcedOptions: [
+                    {
+                        msgType: 1,
+                        optionType: ExecutorOptionType.LZ_RECEIVE,
+                        gas: 60000,
+                        value: 0
+                    }
+                ]
             }
         },
         {
@@ -248,7 +287,15 @@ const config: OAppOmniGraphHardhat = {
                             "0xb19a9370d404308040a9760678c8ca28affbbb76", // nethermind dvn on mantle
                         ]
                     }
-                }
+                },
+                enforcedOptions: [
+                    {
+                        msgType: 1,
+                        optionType: ExecutorOptionType.LZ_RECEIVE,
+                        gas: 60000,
+                        value: 0
+                    }
+                ]
             }
         },
     ],
