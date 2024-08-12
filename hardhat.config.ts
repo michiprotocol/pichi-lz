@@ -59,17 +59,17 @@ const config: HardhatUserConfig = {
         },
         'ethereum': {
             eid: EndpointId.ETHEREUM_V2_MAINNET,
-            url: process.env.RPC_URL_FUJI || 'https://rpc.ankr.com/eth',
+            url: process.env.RPC_URL_ETHEREUM || 'https://rpc.ankr.com/eth',
             accounts,
         },
         'arbitrum': {
             eid: EndpointId.ARBITRUM_V2_MAINNET,
-            url: process.env.RPC_URL_AMOY || 'https://rpc.ankr.com/arbitrum',
+            url: process.env.RPC_URL_ARBITRUM || 'https://rpc.ankr.com/arbitrum',
             accounts,
         },
         'mantle': {
             eid: EndpointId.MANTLE_V2_MAINNET,
-            url: process.env.RPC_URL_AMOY || 'https://rpc.mantle.xyz/',
+            url: process.env.RPC_URL_MANTLE || 'https://rpc.mantle.xyz/',
             accounts,
         },
     },

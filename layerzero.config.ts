@@ -86,7 +86,7 @@ const config: OAppOmniGraphHardhat = {
             config: {
                 sendLibrary: "0x975bcD720be66659e3EB3C0e4F1866a3020E493A", // SendLib302 on arb
                 receiveLibraryConfig: {
-                    receiveLibrary: "0x7B9E184e07a6EE1aC23eAe0fe8D6Be2f663f05e6",
+                    receiveLibrary: "0x7B9E184e07a6EE1aC23eAe0fe8D6Be2f663f05e6", // ReceiveLib302 on arb
                     gracePeriod: BigInt(0),
                 },
                 sendConfig: {
