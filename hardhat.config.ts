@@ -41,7 +41,7 @@ const config: HardhatUserConfig = {
     solidity: {
         compilers: [
             {
-                version: '0.8.22',
+                version: '0.8.20',
                 settings: {
                     optimizer: {
                         enabled: true,
@@ -57,19 +57,17 @@ const config: HardhatUserConfig = {
             url: process.env.RPC_URL_SEPOLIA || 'https://rpc.sepolia.org/',
             accounts,
         },
-        'ethereum': {
-            eid: EndpointId.ETHEREUM_V2_MAINNET,
-            url: process.env.RPC_URL_FUJI || 'https://rpc.ankr.com/eth',
+        'arbitrum-testnet': {
+            eid:40231,
+            url: 'https://sepolia-rollup.arbitrum.io/rpc',
             accounts,
         },
-        'arbitrum': {
-            eid: EndpointId.ARBITRUM_V2_MAINNET,
-            url: process.env.RPC_URL_AMOY || 'https://rpc.ankr.com/arbitrum',
-            accounts,
-        },
-        'mantle': {
-            eid: EndpointId.MANTLE_V2_MAINNET,
-            url: process.env.RPC_URL_AMOY || 'https://rpc.mantle.xyz/',
+        'mantle-testnet': {
+            eid: 40246,
+            url: 'https://lb.drpc.org/ogrpc?network=mantle-sepolia&dkey=AvM7kbbCQE_wtg3gyulIGctkFcJh9VsR7pPangOF84-p',
+            // url: 'https://mantle-sepolia.infura.io/v3/16ad61e92bb34d84931f0511c3a3dbc1',
+            // url: 'https://mantle-sepolia.infura.io/v3/3cac990920ac4615ac757f9628b7a087',
+            // url: 'https://rpc.testnet.mantle.xyz',
             accounts,
         },
     },

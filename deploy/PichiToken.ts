@@ -1,8 +1,9 @@
 import assert from 'assert'
 
 import { type DeployFunction } from 'hardhat-deploy/types'
+import {BigNumber} from "ethers";
 
-const contractName = 'PichiToken'
+const contractName = 'Bob'
 
 const deploy: DeployFunction = async (hre) => {
     const { getNamedAccounts, deployments } = hre
@@ -32,14 +33,15 @@ const deploy: DeployFunction = async (hre) => {
     //   }
     // }
     const endpointV2Deployment = await hre.deployments.get('EndpointV2')
-
+    console.log(endpointV2Deployment.address)
     const { address } = await deploy(contractName, {
         from: deployer,
         args: [
-            'Pichi', // name
-            'PICHI', // symbol
+            'Bob', // name
+            'BOB', // symbol
             endpointV2Deployment.address, // LayerZero's EndpointV2 address
             deployer, // owner
+            BigNumber.from("12000000000000000000000000")
         ],
         log: true,
         skipIfAlreadyDeployed: false,
